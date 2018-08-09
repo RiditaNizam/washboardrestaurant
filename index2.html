@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Washboard Restaurant</title>
+    <!--BOOTSTRAP STYLESHEET-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    
+    <!--CUSTOM STYLESHEET FOR THIS WEBPAGE-->
+    <link rel="stylesheet" type="text/css" href="mycss.css">
+    
+    <!--DOWNLOADED FONT-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans|Montserrat' rel='stylesheet' type='text/css'>
+
+    <!--JQUERY UI LIBRARY ADDED FOR GRADIENTSLIDE!!!!!-->
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <div class="container-fullwidth">
+        <nav class="navbar navbar-inverse navbar-dark" style="border-radius:0px">
+            <div class="container-default">
+                <div class="navbar-header">
+                    <!--COLLAPSABLE NAVBAR BUTTON-->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="aboutus.html">ABOUT</a></li>
+                        <li><a href="menuitems2.html">MENU</a></li>
+                        <li><a href="contactus.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--DIV FOR EFFECT OF GRADIENT SLIDE WHEN PAGE LOADS-->
+    <div id="gradientslide"></div>
+
+    <!--JQUERY UI LIBRARY SCRIPT TO HAVE GRADIENT SLIDE EFFECT-->
+    <script>
+        $( window ).on( "load", function() { 
+            $("#gradientslide").hide("slide", 2000);
+        });
+    </script>
+
+    <div class="row">
+        <div class="col-md-12">
+            <img src="images/architecture/interiorfinal.png" alt="restaurant" class="image">
+        </div>
+    </div>
+
+    <div id="our col-md-6">
+        <!--WRONG COLORS-->
+        <div class="ourtext">
+            <div class="ourtitle">OUR FOOD</div>
+            <div class="ourleft">Our food is handmade fresh everyday, using premium quality ingredients. We developed our own recipes after years of work and research, preserving and improving traditional American flavors.</div>
+        </div>
+        <div class="col-md-6">
+            <img src="images/dessert/chocolate_cookies.jpg" alt="cookies" class="image">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <img src="images/architecture/eateryinterior.png" alt="chairs" class="image">
+        </div>
+        <div class="col-md-6">
+            <h2 class="title">ABOUT US</h2>
+            <p class="aboutustext">Washboard is the first eatery in New York City dedicated to abdominal fat reduction, founded in 2018. Behind Washboard is a group of American chefs and nutritionists with more than 30 years of experience.</p>
+            <button type="button" class="btn btn-outline-info">MORE ABOUT US</button>
+        </div>
+    </div>
+
+    <div class="row fourblockscontainer">
+        <div class="fourblockstext">
+            <div class="fourblockstitle">A DAY IN OUR EATERY</div>
+        </div>
+    </div>
+
+    <!--DOWNLOAD THE BOOTSTRAP JS CODE-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>

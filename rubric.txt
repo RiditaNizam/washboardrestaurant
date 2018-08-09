@@ -1,0 +1,11 @@
+✔ Minimum 3 pages
+✔ Apply a color scheme different from Bootstrap defaults
+
+- Use Bootstrap to give your site:
+    ✔ Responsive design using the grid system
+    ✔ A responsive (collapsing) navbar
+    ✔ A form with buttons
+    ✔ One other built-in feature from Bootstrap's JavaScript plugins (carousel)
+- Use jQuery to:
+    ✔ Animate something when clicked on
+    ▢ Apply a 3rd party plug-in or library of your choice

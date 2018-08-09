@@ -1,0 +1,264 @@
+/*
+Light pink= #EEDFDD
+Dark pink= #FAC3B8
+Coral= #F56B61
+Light brown= #B98068
+Dark brown= #4F3530
+*/
+
+.jQblock {
+  /*background:#98bf21;*/
+  /*height:100px;*/
+  /*width:100px;*/
+  position: absolute;
+}
+
+#gradientslide {
+  z-index: 2;
+  position: absolute;
+  top: 52px;
+  left: 0;
+  width: 100%;
+  height: 1279px;
+  background: #ccc;
+  border: 0px solid #000;
+  background: linear-gradient(to bottom right, #4F3530, #F56B61);
+}
+/*Throughout website*/
+
+.container-default {
+  display: flex;
+  justify-content: center;
+}
+
+.nav.navbar-nav li a {
+  color: #F56B61;
+  font-family: Montserrat, sans-serif;
+}
+
+.darkinterior {
+  width: 100%;
+}
+
+.col-md-6 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.navbar-custom {
+  color: orange;
+}
+
+.smalltext {
+  color: #F56B61;
+  font-family: Montserrat, sans-serif;
+  font-size: 36px;
+  font-style: italic;
+  letter-spacing: 4px;
+  line-height: 42px;
+  margin-top: 240px;
+  text-align: center;
+}
+
+.largetext {
+  text-align: center;
+  color: #F56B61;
+  font-family: Montserrat, sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: 7px;
+  line-height: 50px;
+  margin-top: 24px;
+}
+
+/*index*/
+
+.homepageimage {
+  width: 100%;
+  padding: 0px;
+}
+
+/*contactus*/
+
+.contactusbackground {
+  background-color: #EEDFDD;
+}
+
+.contactustitle {
+  color: #4F3530;
+  font-family: Montserrat, sans-serif;
+  font-size: 30px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.centeredtext {
+  color: #EEDFDD;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.formcontainer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: Montserrat, sans-serif;
+}
+
+/*menuitems*/
+
+.ingredients {
+  font-family: Montserrat, sans-serif;
+  font-style: italic;
+  display: none;
+}
+
+.menuitemname {
+  font-family: Montserrat, sans-serif;
+}
+
+/*orderonline*/
+
+.mealcontainer {
+  background-color: #EEDFDD;
+}
+
+.title {
+  color: #4F3530;
+  font-family: Montserrat, sans-serif;
+  font-size: 30px;
+}
+
+.fourblockscontainer {
+  background-color: #4F3530;
+}
+
+.fourblockstext {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.fourblockstitle {
+  color: #F56B61;
+  font-family: Montserrat, sans-serif;
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+.fourblockspink {
+  padding-left: 95px;
+  padding-right: 95px;
+  padding-top: 20px;
+}
+
+.ourstorycontainer {
+    background-color: #EEDFDD;
+}
+
+.ourstorytitle {
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 70px;
+    margin-bottom: 40px;
+    padding-top: 173px;
+    text-align: center;
+}
+
+.ourstorytext {
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.qualitytext {
+    border-color: #B98068;
+    border-style: solid;
+    border-width: 2px;
+    color: #4F3530;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    letter-spacing: 2px;
+    line-height: 38px;
+    margin-bottom: 173px;
+    padding: 30px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.ourtext {
+    background-color: #4F3530;
+    color: #EEDFDD;
+    height: 600px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding: 100px;
+}
+
+.ourtitle {
+    color: #EEDFDD;
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.ourleft {
+    color: #EEDFDD;
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    padding-top: 40px;
+}
+
+.visitus {
+    background-color: #F56B61;
+}
+
+.visitustitle {
+    color: #4F3530;
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 200px;
+    margin-bottom: 40px;
+    padding-top: 173px;
+    text-align: center;
+}
+
+.locationtext {
+    border-color: #FAC3B8;
+    border-style: solid;
+    border-width: 2px;
+    color: #4F3530;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    height: 40px;
+    letter-spacing: 2px;
+    line-height: 38px;
+    margin-bottom: 173px;
+    padding: 30px;
+    width: 60%;
+    margin: 0 auto;
+}
