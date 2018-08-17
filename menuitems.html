@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 
 <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Menu</title>
+
+    <!--BOOTSTRAP STYLESHEET-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--CUSTOM STYLESHEET FOR THIS WEBPAGE-->
     <link rel="stylesheet" type="text/css" href="mycss.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!--FONT-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans|Montserrat' rel='stylesheet' type='text/css'>
+
 </head>
 
 <body>
@@ -18,7 +27,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        
-          </button>
+            </button>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
@@ -32,174 +41,201 @@
         </nav>
     </div>
 
-    <button type="button" class="btn btn-primary" id="showallingredients">Ingredients</button>
+    <div class="driedorangebackground">
+        <img src="images/driedorange.jpg" alt="Oranges" style="width:100%;">
+        <div class="menulefttext">MENU</div>
+    </div>
 
     <!--Breakfast-->
-    <div class="row">
-        <div class="col-md-9 mealcontainer">
+    <div class="mealcontainer">
+        <img src="images/breakfast/smoothie.jpg" alt="Smoothie" style="width:100%;">
+        <div class="topmiddletitle">
+            <!--JQUERY FADETHIS EFFECT-->
+            <div class="slide-left">BREAKFAST</div>
+        </div>
+        <div class="leftmiddleitemsholder breakfasttext">
             <div class="row">
-                <div class="col-md-4">
-                    <p class="menuitemname">MUSCLE MORNING</p>
-                    <p class="ingredients">Eggs, turkey, mozzarella, spinach omelette</p>
-                </div>
-                <div class="col-md-2">$7.50</div>
-            </div>
+                <div class="menuitemname">EGGS-CELLENT ADVENTURE</div>
+                <div class="ingredients">Eggs, roast beef, tomato, roasted red pepper</div>
+            </div><br>
             <div class="row">
-                <div class="col-md-4">
-                    <p class="menuitemname">EGGS-CELLENT ADVENTURE</p>
-                    <p class="ingredients">Eggs, roast beef, tomato, roasted red pepper</p>
-                </div>
-                <div class="col-md-2">$6.50</div>
-            </div>
+                <div class="menuitemname">MUSCLE MORNING</div>
+                <div class="ingredients">Eggs, turkey, mozzarella, spinach omelette</div>
+            </div><br>
             <div class="row">
-                <div class="col-md-4">
-                    <p class="menuitemname">GRANOLA PARFAIT</p>
-                    <p class="ingredients">Granola, yogurt, raspberries</p>
-                </div>
-                <div class="col-md-2">$5.00</div>
-            </div>
+                <div class="menuitemname">HONEY, I SHRUNK MY GUT</div>
+                <div class="ingredients">Oatmeal, blackberries, pecans</div>
+            </div><br>
             <div class="row">
-                <div class="col-md-4">
-                    <p class="menuitemname">HONEY, I SHRUNK MY GUT</p>
-                    <p class="ingredients">Oatmeal, blackberries, pecans</p>
-                </div>
-                <div class="col-md-2">$6.00</div>
+                <div class="menuitemname">MINT CONDITION</div>
+                <div class="ingredients">Yogurt, mint, melon</div>
+            </div><br>
+            <div class="row">
+                <div class="menuitemname">LIGHT LUMBERJACK</div>
+                <div class="ingredients">Eggs, potatoes, turkey, cheese</div>
             </div>
         </div>
-        <div class="col-md-3">
-            <img src="images/breakfast/parfait.jpg"></img>
+    </div>
+
+    <!--Brunch-->
+    <div class="mealcontainer">
+        <img src="images/brunch/pomegranate.jpg" alt="pomegranate" style="width:100%;">
+        <div class="topmiddletitle">
+            <!--JQUERY FADETHIS EFFECT-->
+            <div class="slide-left">BRUNCH</div>
+        </div>
+        <div class="rightmiddleitemsholder brunchtext">
+            <div class="row">
+                <div class="menuitemname">NO COUCH POTATOES</div>
+                <div class="ingredients">Roasted potatoes, blue cheese, walnuts</div>
+            </div><br>
+            <div class="row">
+                <div class="menuitemname">RELAX, IT'S SUNDAY</div>
+                <div class="ingredients">Eggs, whole-grain toast, banana, milk</div>
+            </div><br>
+            <div class="row">
+                <div class="menuitemname">CHILLIN' LIKE A VILLIAN</div>
+                <div class="ingredients">Eggs, cheese, chilies</div>
+            </div><br>
+            <div class="row">
+                <div class="menuitemname">CHOP THE BLOCK SALAD</div>
+                <div class="ingredients">Romaine, avocado, tomato, blue cheese dressing</div>
+            </div><br>
+            <div class="row">
+                <div class="menuitemname">FLORENTINE UNFORESEEN</div>
+                <div class="ingredients">Eggs, spinach, tomato pesto</div>
+            </div>
         </div>
     </div>
 
     <!--Lunch-->
-    <div class="row">
-        <div class="col-md-4">
-            <img src="images/lunch/roastbeefonionsoup.jpg"></img>
+    <div class="mealcontainer">
+        <img src="images/lunch/lunchtable.jpg" alt="lunch" style="width:100%;">
+        <div class="topmiddletitle">
+            <!--JQUERY FADETHIS EFFECT-->
+            <div class="slide-top">LUNCH</div>
         </div>
-        <div class="col-md-8 mealcontainer">
-            <div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <p class="menuitemname">CRUNCH TIME</p>
-                        <p class="ingredients">Greens, turkey, apple, carrot salad</p>
-                    </div>
-                    <div class="col-md-2">$7.50</div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <p class="menuitemname">GO FIG-URE PANINI</p>
-                        <p class="ingredients">Ciabatta, swiss, fig, arugula</p>
-                    </div>
-                    <div class="col-md-2">$6.50</div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <p class="menuitemname">ROOT FOR YOUR ABS</p>
-                        <p class="ingredients">Carrot and turnip fries</p>
-                    </div>
-                    <div class="col-md-2">$5.00</div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <p class="menuitemname">CAN'T BEET THIS SALAD</p>
-                        <p class="ingredients">Romaine, grapefruit, beets, almonds</p>
-                    </div>
-                    <div class="col-md-2">$6.00</div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <p class="menuitemname">ROAST BEEF ONION SOUP</p>
-                        <p class="ingredients">Roast beef, onions, garlic</p>
-                    </div>
-                    <div class="col-md-2">$6.00</div>
-                </div>
+        <div class="leftmiddleitemsholder lunchtext">
+            <div class="row">
+                <div class="menuitemname">CRUNCH TIME SALAD</div>
+                <div class="ingredients">Greens, turkey, apple, carrot</div>
+            </div><br>
+            <div class="row">
+                <div class="menuitemname">GO FIG-URE PANINI</div>
+                <div class="ingredients">Ciabatta, swiss, fig, arugula</div>
+            </div><br>
+            <div class="row">
+                <div class="menuitemname">ROOT FOR YOUR ABS</div>
+                <div class="ingredients">Carrot and turnip fries</div>
+            </div><br>
+            <div class="row">
+                <div class="menuitemname">CAN'T BEET THIS SALAD</div>
+                <div class="ingredients">Romaine, grapefruit, beets, almonds</div>
             </div>
+        </div>
+    </div>
+
+    <!--SNACKS-->
+    <div class="mealcontainer">
+        <img src="images/snacks/crackers.jpg" alt="Snacks" style="width:100%;">
+        <div class="topmiddletitle">
+            <!--JQUERY FADETHIS EFFECT-->
+            <div class="slide-right">SNACKS</div>
+        </div>
+        <div class="rightmiddleitemsholder snackstext">
+            <div class="row">
+                <div class="menuitemname">SCREAMIN' CREAMIN' VEGGIES</div>
+                <div class="ingredients">Whole wheat crackers, roasted red pepper spread</div>
+            </div><br>
+            <div class="row">
+                <div class="menuitemname">A GOOD GAME OF SQUASH</div>
+                <div class="ingredients">Steamed zucchini and squash, parmesan</div>
+            </div><br>
+            <div class="row">
+                <div class="menuitemname">NO SUFFERIN' SUCCOTASH</div>
+                <div class="ingredients">Lima beans, corn, cheddar</div>
+            </div><br>
+            <div class="row">
+                <div class="menuitemname">SUMMER TUBING</div>
+                <div class="ingredients">Cucumber, cottage cheese spread</div>
+            </div><br>
         </div>
     </div>
 
     <!--Dinner-->
-    <div class="row">
-        <div class="col-md-6 mealcontainer">
-            <div class="row">
-                <div class="col-md-4">
-                    <p class="menuitemname">BELL RINGER</p>
-                    <p class="ingredients">Chicken, red bell pepper, onion</p>
-                </div>
-                <div class="col-md-2">$7.50</div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <p class="menuitemname">EGG-DROP POUNDS-DROP SOUP</p>
-                    <p class="ingredients">Eggs, green onions</p>
-                </div>
-                <div class="col-md-2">$3.50</div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <p class="menuitemname">WHAT'S YOUR BEEF WITH BROCCOLINI?</p>
-                    <p class="ingredients">Skirt steak, broccolini, scallions</p>
-                </div>
-                <div class="col-md-2">$5.00</div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <p class="menuitemname">SLAMMIN' SALMON</p>
-                    <p class="ingredients">Salmon, mixed greens, ranch dressing</p>
-                </div>
-                <div class="col-md-2">$6.00</div>
-            </div>
+    <div class="mealcontainer">
+        <img src="images/dinner/eggsflourfettuccine.jpg" alt="Dinner" style="width:100%;">
+        <div class="topmiddletitle">
+            <!--JQUERY FADETHIS EFFECT-->
+            <div class="slide-right">DINNER</div>
         </div>
-        <div class="col-md-6">
-            <img src="images/breakfast/parfait.jpg"></img>
+        <div class="middleitemsholder dinnertext">
+            <div class="row">
+                <div class="menuitemname">BELL RINGER</div>
+                <div class="ingredients">Chicken, red bell pepper, onion</div>
+            </div><br>
+            <div class="row">
+                <div class="menuitemname">EGG-DROP POUNDS-DROP SOUP</div>
+                <div class="ingredients">Eggs, green onions</div>
+            </div><br>
+            <div class="row">
+                <div class="menuitemname">WHAT'S YOUR BEEF WITH BROCCOLINI?</div>
+                <div class="ingredients">Skirt steak, broccolini, scallions</div>
+            </div><br>
+            <div class="row">
+                <div class="menuitemname">SLAMMIN' SALMON</div>
+                <div class="ingredients">Salmon, mixed greens, ranch dressing</div>
+            </div>
         </div>
     </div>
 
     <!--Dessert-->
-    <div class="row">
-        <div class="col-md-6">
-            <img src="images/dessert/tiramisu.jpg"></img>
+    <div class="mealcontainer">
+        <img src="images/dessert/pie.jpg" alt="Pie" style="width:100%;">
+        <div class="topmiddletitle">
+            <!--JQUERY FADETHIS EFFECT-->
+            <div class="slide-right">DESSERT</div>
         </div>
-        <div class="col-md-6 mealcontainer">
+        <div class="middleitemsholder">
             <div class="row">
-                <div class="col-md-4">
-                    <p>BELLY-BUSTING BERRY</p>
-                    <p class="ingredients">Vanilla ice cream, berries, whey protein</p>
-                </div>
-                <div class="col-md-2">$3.50</div>
-            </div>
+                <div class="menuitemname">BELLY-BUSTING BERRY</div>
+                <div class="ingredients">Vanilla ice cream, berry mixture</div>
+            </div><br>
             <div class="row">
-                <div class="col-md-4">
-                    <p>PIECE UH CAKE</p>
-                    <p class="ingredients">Pound cake, Nutella, strawberries</p>
-                </div>
-                <div class="col-md-2">$2.50</div>
-            </div>
+                <div class="menuitemname">PIECE UH CAKE</div>
+                <div class="ingredients">Pound cake, Nutella, strawberries</div>
+            </div><br>
             <div class="row">
-                <div class="col-md-4">
-                    <p>MUSCLE MUFFIN</p>
-                    <p class="ingredients">Banana, apple, whey protein</p>
-                </div>
-                <div class="col-md-2">$5.00</div>
-            </div>
+                <div class="menuitemname">BERRY, BERRY GOOD TO ME</div>
+                <div class="ingredients">Strawberry pie</div>
+            </div><br>
             <div class="row">
-                <div class="col-md-4">
-                    <p>BERRY, BERRY GOOD TO ME</p>
-                    <p class="ingredients">Strawberry pie</p>
-                </div>
-                <div class="col-md-2">$2.00</div>
+                <div class="menuitemname">BEST FOR LAST CHOCOLATE MOUSSE</div>
+                <div class="ingredients">Semisweet chocolate, tofu, yogurt</div>
             </div>
+
         </div>
     </div>
 
-    <!-- load scripts at the bottom of your page -->
-    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!--SCRIPTS-->
+    <!--MAIN JQUERY SCRIPT-->
+    <!--<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+    <!--<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>-->
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <!--<script src="//code.jquery.com/jquery-1.12.4.js"></script>-->
 
+    <!--INCLUDE JQUERY FADETHIS SCRIPT FOR ANIMATION ON MENUITEMS-->
+    <script src="/jquery.fadethis.min.js"></script>
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>-->
+    <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>-->
+
+
+
+    <!--JQUERY UI LIBRARY ADDED FOR GRADIENTSLIDE-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
     <!--Loads the script I made for this website-->
     <script src="site.js"></script>
-
 
 </body>
 

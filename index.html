@@ -2,11 +2,19 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Washboard Restaurant</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!--BOOTSTRAP STYLESHEET-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--CUSTOM STYLESHEET-->
     <link rel="stylesheet" type="text/css" href="mycss.css">
+
+    <!--FONT-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans|Montserrat' rel='stylesheet' type='text/css'>
 
 </head>
@@ -14,10 +22,10 @@
 <body>
     <!--NAVBAR-->
     <div class="container-fullwidth">
-        <!--<nav class="navbar navbar-inverse navbar-dark bg-transparent">-->
-        <nav class="navbar navbar-inverse navbar-dark">
+        <nav class="navbar navbar-inverse navbar-dark" style="border-radius:0px">
             <div class="container-default">
                 <div class="navbar-header">
+                    <!--COLLAPSABLE NAVBAR BUTTON-->
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -28,7 +36,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="aboutus.html">ABOUT</a></li>
-                        <li><a href="menuitems2.html">MENU</a></li>
+                        <li><a href="menuitems.html">MENU</a></li>
                         <li><a href="contactus.html">CONTACT</a></li>
                     </ul>
                 </div>
@@ -36,59 +44,69 @@
         </nav>
     </div>
 
-    <div class="row">
-        <div class="col-md-12">
-            <img src="images/architecture/interiorfinal.png" alt="restaurant" class="image">
+    <!--DIV FOR EFFECT OF GRADIENT SLIDE WHEN PAGE LOADS-->
+    <div id="gradientslide"></div>
+
+    <div class="darkimagecontainer">
+        <img src="images/architecture/interiorfinal.png" alt="Restaurant" style="width:100%;">
+        <div class="centereddiscover">DISCOVER<br>WHO WE ARE</div>
+    </div>
+
+    <!--OUR FOOD-->
+    <div class="container-fluid ourbackground">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text no-padding center-flex">
+                <div class="col-md-8">
+                    <div class="ourtitle text-center">OUR FOOD</div>
+                    <div class="ourtext text-center">Our food is handmade fresh everyday, using premium quality ingredients. <br> We developed our own recipes after years of work and research, preserving and improving traditional American flavors.
+                    </div>
+                    <div class="button">TASTE IT</div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 image no-padding">
+                <div class="full-width ourfoodimage"></div>
+            </div>
         </div>
     </div>
 
-    <div id="our col-md-6"> <!--WRONG COLORS-->
-        <div class="ourtext">
-            <div class="ourtitle">OUR FOOD</div>
-            <div class="ourleft">Our food is handmade fresh everyday, using premium quality ingredients. We developed our own recipes after years of work and research, preserving and improving traditional American flavors.</div>
-        </div>
-        <div class="col-md-6">
-            <img src="images/dessert/chocolate_cookies.jpg" alt="cookies" class="image">
-        </div>
-    </div>
+    <!--ABOUT US-->
 
-    <div class="row">
-        <div class="col-md-6">
-            <img src="images/architecture/eateryinterior.png" alt="chairs" class="image">
-        </div>
-        <div class="col-md-6">
-            <h2 class="title">ABOUT US</h2>
-            <p class="aboutustext">Washboard is the first eatery in New York City dedicated to abdominal fat reduction, founded in 2018. Behind Washboard is a group of American chefs and nutritionists with more than 30 years of experience.</p>
-            <button type="button" class="btn btn-outline-info">MORE ABOUT US</button>
+    <div class="container-fluid ourbackground">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 image no-padding">
+                <div class="full-width aboutusimage"></div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text no-padding center-flex">
+                <div class="col-md-8">
+                    <div class="ourtitle text-center">
+                        <a href="aboutus.html">ABOUT US</a>
+                    </div>
+                    <div class="ourtext text-center">Behind Washboard is a group of American chefs and nutritionists with more than 30 years of experience.
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="row fourblockscontainer">
-        <div class="fourblockstext">
-            <div class="fourblockstitle">A DAY IN OUR EATERY</div>
-        </div>
-    </div>
+    <!--SCRIPTS-->
 
-    <!--jQuery TEST!!!!-->
-    <!--<button id="jQtest">Start Animation</button>-->
-    <!--<div class="jQblock" style="background:#98bf21; height:100px; width:100px; position:absolute;"></div>-->
-    <!--<div class="jQblock">-->
-    <!--    <img src="images/breakfast/parfait.jpg" alt="parfait">-->
-    <!--</div>-->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!--<p class="tagline">CLICK THIS TO CHECK IF JQUERY IS WORKING!!!!</p>-->
-    <!-- load scripts at the bottom of your page -->
-    <!--<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>-->
-    <!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
-    <!--<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
-    <!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
 
-    <!--Loads the script I made for this website-->
-    <!--<script src="site.js"></script>-->
-    <!--END JQUERY TEST!!!-->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!--bootstrap javascript?-->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+
+    <!--JQUERY SCRIPT-->
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+
+    <!--JQUERY UI LIBRARY FOR GRADIENTSLIDE-->
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    <!--CUSTOM SCRIPTS WRITTEN FOR THIS WEBSITE-->
+    <script src="site.js"></script>
+
 </body>
 
 </html>

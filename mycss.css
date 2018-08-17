@@ -6,6 +6,9 @@ Light brown= #B98068
 Dark brown= #4F3530
 */
 
+/* Optional theme */
+@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');
+
 .jQblock {
   /*background:#98bf21;*/
   /*height:100px;*/
@@ -20,10 +23,12 @@ Dark brown= #4F3530
   left: 0;
   width: 100%;
   height: 1279px;
-  background: #ccc;
   border: 0px solid #000;
   background: linear-gradient(to bottom right, #4F3530, #F56B61);
 }
+
+
+
 /*Throughout website*/
 
 .container-default {
@@ -76,33 +81,112 @@ Dark brown= #4F3530
   margin-top: 24px;
 }
 
+
+
+
 /*index*/
+
+.aboutusimage {
+    background-image:url('images/architecture/chefcook.jpg');
+}
+
+.full-width img {
+  width:100%;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.button {
+    border-color: #B98068;
+    border-style: solid;
+    border-width: 2px;
+    color: #B98068;
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    height: 40px;
+    letter-spacing: 2px;
+    line-height: 38px;
+    padding: 0 20px;
+}
+
+.button:hover {
+    background-color: #B98068;
+    color: #4F3530;
+}
+
+.centereddiscover {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F56B61;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 7px;
+    font-family: Montserrat, sans-serif;
+}
 
 .homepageimage {
   width: 100%;
   padding: 0px;
 }
 
-/*contactus*/
-
-.contactusbackground {
-  background-color: #EEDFDD;
+.center-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
 }
 
-.contactustitle {
+.boxescontainer {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-around;
+  height: auto;
+}
+
+.box {
+  background: #EEDFDD;
   color: #4F3530;
   font-family: Montserrat, sans-serif;
-  font-size: 30px;
-  padding-top: 50px;
+  height: 225px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  margin: 5px;
   text-align: center;
+  width: 20%;
 }
 
-.centeredtext {
+
+
+
+/*contactus*/
+
+.contactuscontainer {
+  position: relative;
+  text-align: center;
   color: #EEDFDD;
+}
+
+.contactuscentered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #4F3530;
+  font-family: Montserrat, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.contactusbackground {
+  background-color: #F56B61;
 }
 
 .formcontainer {
@@ -113,7 +197,104 @@ Dark brown= #4F3530
   font-family: Montserrat, sans-serif;
 }
 
+.btn.outline {
+  background: none;
+  padding: 12px 22px;
+}
+
+.btn-primary.outline {
+  border: 2px solid #4F3530;
+  color: #4F3530;
+}
+
+.btn-primary.outline:hover,
+.btn-primary.outline:focus,
+.btn-primary.outline:active,
+.btn-primary.outline.active,
+.open>.dropdown-toggle.btn-primary {
+  color: #4F3530;
+  border-color: #4F3530;
+  font-family: Montserrat, sans-serif;
+}
+
+.btn-primary.outline:active,
+.btn-primary.outline.active {
+  border-color: #EEDFDD;
+  color: #EEDFDD;
+  box-shadow: none;
+}
+
 /*menuitems*/
+
+.menulefttext {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  margin-left: 50px;
+  font-family: Montserrat, sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  color: #4F3530;
+}
+
+.mealcontainer {
+  position: relative;
+  text-align: center;
+}
+
+.topmiddletitle {
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Montserrat, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #F56B61;
+}
+
+.rightmiddleitemsholder {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.brunchtext {
+  left: 75%;
+  color: #4F3530;
+}
+
+.snackstext {
+  left: 87.5%;
+  color: #4F3530;
+}
+
+.leftmiddleitemsholder {
+  position: absolute;
+  top: 50%;
+  left: 12.5%;
+  transform: translate(-50%, -50%);
+}
+
+.lunchtext {
+  color: #FAC3B8;
+}
+
+.breakfasttext {
+  color: #4F3530;
+}
+
+.middleitemsholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dinnertext {
+  color: #EEDFDD;
+}
 
 .ingredients {
   font-family: Montserrat, sans-serif;
@@ -123,142 +304,278 @@ Dark brown= #4F3530
 
 .menuitemname {
   font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
 }
 
-/*orderonline*/
+.breakfast {
+  padding-top: 120px;
+}
+
+.centeredbreakfast {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-family: Montserrat, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #F56B61;
+  z-index: 1;
+  margin-top: 40px;
+}
+
+.centeredbrunch {
+  font-family: Montserrat, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #F56B61;
+  z-index: 1;
+  margin-top: 40px;
+}
 
 .mealcontainer {
   background-color: #EEDFDD;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  position: relative;
 }
 
-.title {
+.breakfastitemsholder {
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+/*aboutus*/
+
+.ourstorycontainer {
+  background-color: #EEDFDD;
+  height: 650px;
+}
+
+.ourstorytext{
+  position: relative;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.ourstorytitle {
+  font-family: Montserrat, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.ourstorydescription {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.aboutuscontainer {
+  background-color: #EEDFDD;
+  color: #EEDFDD;
+  height: 600px;
+  letter-spacing: 1px;
+}
+
+.aboutustitle {
   color: #4F3530;
   font-family: Montserrat, sans-serif;
   font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-align: center;
 }
 
-.fourblockscontainer {
+.aboutustext {
+  color: #4F3530;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.qualitytext {
+  border-color: #B98068;
+  border-style: solid;
+  border-width: 2px;
+  color: #4F3530;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  padding: 30px;
+  width: 60%;
+}
+
+.visituscontainer {
+  position: relative;
+  text-align: center;
+  color: #4F3530;
+  background-color: #F56B61;
+  height: 450px;
+  width: 100%
+}
+
+.visitustext {
+  color: #4F3530;
+  margin-top: 5%;
+  font-family: Montserrat, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.centerednewyork {
+  border-color: #EEDFDD;
+  border-style: solid;
+  border-width: 2px;
+  color: #4F3530;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  left: 50%;
+  letter-spacing: 2px;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+}
+
+a:hover {
+  color: #4F3530;
+}
+
+a:active {
+  color: #4F3530;
+}
+
+a:visited {
+  color: #4F3530;
+}
+
+.sixblockscontainer {
   background-color: #4F3530;
 }
 
-.fourblockstext {
+.sixblockstext {
   font-family: Montserrat, sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
   text-align: center;
 }
 
-.fourblockstitle {
+.sixblockstitle {
   color: #F56B61;
   font-family: Montserrat, sans-serif;
   font-size: 30px;
   padding-top: 20px;
 }
 
-.fourblockspink {
+.sixblockspink {
   padding-left: 95px;
   padding-right: 95px;
   padding-top: 20px;
 }
 
-.ourstorycontainer {
-    background-color: #EEDFDD;
+.ourfoodcontainer {
+  background-color: #EEDFDD;
+  color: #EEDFDD;
+  height: 600px;
+  letter-spacing: 1px;
 }
 
-.ourstorytitle {
+.ourmanifestotitle {
+    color: #EEDFDD;
     font-family: Montserrat, sans-serif;
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 5px;
-    line-height: 70px;
-    margin-bottom: 40px;
-    padding-top: 173px;
-    text-align: center;
 }
 
-.ourstorytext {
-    font-size: 16px;
-    font-style: italic;
-    letter-spacing: 1px;
-    line-height: 30px;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.qualitytext {
-    border-color: #B98068;
-    border-style: solid;
-    border-width: 2px;
+.ourtitle{
     color: #4F3530;
     font-family: Montserrat, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    height: 40px;
-    letter-spacing: 2px;
-    line-height: 38px;
-    margin-bottom: 173px;
-    padding: 30px;
-    width: 60%;
-    margin: 0 auto;
-}
-
-.ourtext {
-    background-color: #4F3530;
-    color: #EEDFDD;
-    height: 600px;
-    letter-spacing: 1px;
-    line-height: 25px;
-    padding: 100px;
-}
-
-.ourtitle {
-    color: #EEDFDD;
-    font-family: Montserrat, sans-serif;
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 5px;
-    text-align: center;
 }
 
-.ourleft {
+.ourmanifestotext {
     color: #EEDFDD;
-    text-align: center;
+    font-family: Montserrat, sans-serif;
     font-size: 16px;
     font-style: italic;
     padding-top: 40px;
 }
 
-.visitus {
-    background-color: #F56B61;
-}
-
-.visitustitle {
+.ourtext{
     color: #4F3530;
     font-family: Montserrat, sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    letter-spacing: 5px;
-    line-height: 200px;
-    margin-bottom: 40px;
-    padding-top: 173px;
-    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-.locationtext {
-    border-color: #FAC3B8;
-    border-style: solid;
-    border-width: 2px;
-    color: #4F3530;
-    font-family: Montserrat, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    height: 40px;
-    letter-spacing: 2px;
-    line-height: 38px;
-    margin-bottom: 173px;
-    padding: 30px;
-    width: 60%;
-    margin: 0 auto;
+.centeredleft {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+.center-flex {
+  /* Safari, Opera, and Chrome */
+  display:-webkit-box;
+  -webkit-box-pack:center;
+  -webkit-box-align:center;
+}
+
+.container-fluid .text {
+  height: 650px;
+}
+
+.ourmanifestobackground{
+  background: #4F3530;
+}
+
+.ourbackground{
+  background-color: #EEDFDD;
+}
+
+.container-fluid .image {
+  height: 650px;
+}
+
+.full-width {
+  width:100%;
+  height:100%;
+  height:calc(100%);
+  background-size:cover;
+}
+
+.ourmanifestoimage{
+  background-image:url('images/dessert/tiramisu.jpg');
+}
+
+.ourfoodimage{
+  background-image:url('images/dessert/chocolate_cookies.jpg');
+}
+
+.formcontactbackground {
+  background-color: #F56B61;
 }
