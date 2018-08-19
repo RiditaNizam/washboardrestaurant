@@ -6,7 +6,6 @@ Light brown= #B98068
 Dark brown= #4F3530
 */
 
-/* Optional theme */
 @import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');
 
 .jQblock {
@@ -26,10 +25,6 @@ Dark brown= #4F3530
   border: 0px solid #000;
   background: linear-gradient(to bottom right, #4F3530, #F56B61);
 }
-
-
-
-/*Throughout website*/
 
 .container-default {
   display: flex;
@@ -81,11 +76,6 @@ Dark brown= #4F3530
   margin-top: 24px;
 }
 
-
-
-
-/*index*/
-
 .aboutusimage {
     background-image:url('images/architecture/chefcook.jpg');
 }
@@ -96,26 +86,6 @@ Dark brown= #4F3530
 
 .no-padding {
   padding: 0 !important;
-}
-
-.button {
-    border-color: #B98068;
-    border-style: solid;
-    border-width: 2px;
-    color: #B98068;
-    display: inline-block;
-    font-family: Montserrat, sans-serif;
-    font-size: 11px;
-    font-weight: bold;
-    height: 40px;
-    letter-spacing: 2px;
-    line-height: 38px;
-    padding: 0 20px;
-}
-
-.button:hover {
-    background-color: #B98068;
-    color: #4F3530;
 }
 
 .centereddiscover {
@@ -162,11 +132,6 @@ Dark brown= #4F3530
   text-align: center;
   width: 20%;
 }
-
-
-
-
-/*contactus*/
 
 .contactuscontainer {
   position: relative;
@@ -223,8 +188,6 @@ Dark brown= #4F3530
   color: #EEDFDD;
   box-shadow: none;
 }
-
-/*menuitems*/
 
 .menulefttext {
   position: absolute;
@@ -344,8 +307,6 @@ Dark brown= #4F3530
   margin: 0 auto;
   padding-top: 30px;
 }
-
-/*aboutus*/
 
 .ourstorycontainer {
   background-color: #EEDFDD;
